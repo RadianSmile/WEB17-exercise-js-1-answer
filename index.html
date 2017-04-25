@@ -1,0 +1,54 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+	<!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+		    	<div class="panel panel-info">
+		        	<div class="panel-heading">
+		            	<h3>新增待辦事項</h3>
+		          	</div>
+		        	<a href="#" id="input-group" class="input-group">
+		        		<input type="text" id="todo-input" type="text" class="form-control input-lg " placeholder="請輸入您的待辦事項">
+		        		<span class="input-group-btn">
+		        			<button id="todo-submit" class="btn btn-primary btn-lg" type="button">新增</button>
+		        		</span>
+		        	</a>
+		        </div>
+		    </div>
+      		<div class="col-md-6 col-md-offset-3">
+        		<div class="panel panel-success">
+          			<div class="panel-heading">
+            			<h3>待辦事項</h3>
+          			</div>
+          			<div id="todo-todoList" class="list-group">
+            			<!--<a href="#" class="list-group-item">未完成</a>
+            			<a href="#" class="list-group-item">未完成</a>-->
+          			</div>
+          			<div class="panel-footer text-right">
+						<button id="todo-allDone" class="btn btn-success text-right">全部標示為已完成</button>	
+          			</div>
+        		</div>
+      		</div>
+		</div>
+	</div>
+  <!-- <script src="jquery-2.2.3.min.js"></script> -->
+  <!-- <script src="js/bootstrap.min.js"></script> -->
+
+	<!-- <script src="js/answer.js"></script> -->
+	<script src="js/js.js"></script>
+	<script>function r (){localStorage.removeItem("todoDataArray");return ("Cleared localStorage.") } ;</script>
+</body>
+
+</html>
